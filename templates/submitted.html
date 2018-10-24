@@ -1,0 +1,57 @@
+<!DOCTTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="W-UA-Compatible" content="ie=edge">
+        <title>Submitted Info</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            #container {
+                width: 60%;
+                padding: 2%;
+            }
+
+            #inner_container {
+                width: 50%;
+                border-width: 0.5%;
+                border-style: solid;
+                border-color: black;
+                background-color: lightgray;
+                padding: 5%;
+            }
+
+            table {
+                width: 100%
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="inner_container">
+                <h3 class="mb-4"><u>Submitted Info</u></h3>
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td> {{ name }}</td>
+                    </tr>
+                    <tr>
+                        <td>Dojo:</td>
+                        <td> {{ dojo }}</td>
+                    </tr>
+                    <tr>
+                        <td>Favorite Language:</td>
+                        <td> {{ language }}</td>
+                    </tr>
+                    <tr class="mb-3">
+                        <td>Comment:</td>
+                        <td> {{ comment }}</td>
+                    </tr>
+                    <tr>
+                </table>
+                <a href="/go_back" class="btn btn-secondary mt-4">Go Back</a>
+            </div>
+        </div>
+    </body>
+</html>
